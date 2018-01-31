@@ -12,6 +12,12 @@ class Autolike
 
 	public function __construct(Facebook $fb)
 	{
+		if (file_exists('lock.tmp')) {
+			$lock = (int) file_get_contents('lock.tmp');
+			if ($lock >= time()) {
+				die("Locked until ".date('Y-m-d H:i:s', $lock)."\nReason : (#17) User request limit reached\n\n");
+			}
+		}
 		$this->fb = $fb;
 	}
 
@@ -89,6 +95,10 @@ class Autolike
 				$a = explode('_', $a['data'][0]['id']);
 				return isset($a[1]) ? $a[1] : false;
 			}
+		}
+		if (preg_match('/limit reached/Usi', $a['out'])) {
+			file_put_contents('lock.tmp', time() + (3600 * 5));
+			die;
 		}
 		return false;
 	}
