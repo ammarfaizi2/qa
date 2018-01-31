@@ -10,6 +10,7 @@ use Facebook\Support\Login;
 use Facebook\Support\Browser;
 use Facebook\Support\Profile;
 use Facebook\Support\Comment;
+use Facebook\Support\Reaction;
 
 /**
  * @author Ammar Faizi <ammarfaizi2@gmail.com>
@@ -18,7 +19,7 @@ use Facebook\Support\Comment;
  */
 class Facebook
 {	
-	use Login, Comment, Profile, Browser;
+	use Login, Comment, Profile, Browser, Reaction;
 
 	const UA = "Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:56.0) Gecko/20100101 Firefox/56.0";
 
@@ -63,6 +64,16 @@ class Facebook
 		file_exists($this->cookieFile) or file_put_contents($this->cookieFile, "");
 	}
 
+
+	public function goTo($url, $opt = [])
+	{
+		$ch = curl_init($url);
+		curl_setopt_array($ch, $this->genOpt($opt, true));
+		$out = curl_exec($ch);
+		$info = curl_getinfo($ch);
+		curl_close($ch);
+		return ['out'=>$out,'info'=>$info];
+	}
 
 	/**
 	 * Generate curl opt
