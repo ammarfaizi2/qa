@@ -16,7 +16,7 @@ $fb = new Facebook($email, $pass);
 // $fb->reaction('2031457776883873', 'WOW');
 
 $app = new Autolike($fb);
-for ($i=0; $i < 5; $i++) { 
+for ($i=0; $i < 10; $i++) { 
 	$app->run();
-	sleep(5);
+	sleep(2);
 }
