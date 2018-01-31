@@ -62,6 +62,7 @@ class Autolike
 		$localPost['failed'] = !$status;
 		$localPost['latest_post'] = $latestPost;
 		$localPost['updated_at'] = date('Y-m-d H:i:s');
+		$localPost['queue']++;
 		file_put_contents(queue.'/target/'.$userId.'.txt', json_encode($localPost, 128));
 		return $status;
 	}
