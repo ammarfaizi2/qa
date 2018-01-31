@@ -1,5 +1,5 @@
 {
-    "token": "EAABwzLixnjYBAAJpQjzhJ7ltltL2nIeERdQ03L9iTBSVfcgD5lsTB1XSi4bVwYSyQOGVgX55ZBPoLZAICLmninxZC6eC8XEQhxqVe76ea9NUYKWUl1Ppibnd6w5mLuLUEc0yuizEl97a9TRM4ZBznNP5q2XrtfSZASNI08vM52o4ZCIr7skmNq1OaHHTzHk7tpWT1NK0LvoXRNti6AqUpl",
-    "expired": 1517417881,
-    "updated_at": "2018-01-31 22:58:02"
+    "token": "EAABwzLixnjYBAI7mqFB2ZBIjUFXY3PDCMjZBg8q4m6dlPNFnKZAksYlwywbMzAQskmJyIr1w2SlXZASYXa3lIdoHPsYc2mmBLOXvDhdvR7mi0cEX82CPZBnHVtjrKSNpTH5hZAeryPY8lj8O2yYfa1CxN7XzkZBZCAahxT0tKuwOxF6fQqQqOb3xIqq7nYXaNxdetuiT0iFQcS4zRLHqAlz9",
+    "expired": 1517421480,
+    "updated_at": "2018-01-31 23:40:46"
 }
