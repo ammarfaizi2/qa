@@ -1,0 +1,1 @@
+https://www.facebook.com/dialog/oauth?client_id=124024574287414&redirect_uri=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F&scope=email&response_type=token%2Cgranted_scopes

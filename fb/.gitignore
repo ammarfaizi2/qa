@@ -1,0 +1,6 @@
+/vendor/
+/fb_data/
+/data/
+*.tmp
+*.lock
+*.cred

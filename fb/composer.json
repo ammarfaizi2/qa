@@ -1,0 +1,19 @@
+{
+    "name": "ammarfaizi2/facebook",
+    "description": "Facebook PHP Package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ammar Faizi",
+            "email": "ammarfaizi2@gmail.com"
+        }
+    ],
+    "require": {
+        "ammarfaizi2/php-curl": "^0.0.2"
+    },
+    "autoload":{
+        "psr-4": {
+            "Facebook\\": "src/Facebook/"
+        }
+    }
+}
