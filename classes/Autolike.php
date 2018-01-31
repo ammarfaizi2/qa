@@ -97,7 +97,7 @@ class Autolike
 			}
 		}
 		if (preg_match('/limit reached/Usi', $a['out'])) {
-			file_put_contents('lock.tmp', time() + (3600 * 5));
+			file_put_contents('lock.tmp', time() + (3600));
 			die;
 		}
 		return false;
