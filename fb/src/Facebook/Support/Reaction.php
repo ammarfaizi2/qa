@@ -20,7 +20,7 @@ trait Reaction
 				$matches[0] = html_entity_decode($matches[0], ENT_QUOTES, 'UTF-8');
 				$a = $this->goTo('https://m.facebook.com/'.$matches[0]);
 				// $a['out'] = file_get_contents('b.tmp');
-				if (preg_match_all('/(ufi\/reaction.+)".+<span>(.*)<\/span>/Usi', $a['out'], $matches)) {
+				if (preg_match_all('/(ufi\/reaction.+)".+<span.*>(.*)<\/span>/Usi', $a['out'], $matches)) {
 					if (isset($matches[1], $matches[2])) {
 						array_walk($matches[1], function (&$m) {
 							$m = 'https://m.facebook.com/'.html_entity_decode($m, ENT_QUOTES, 'UTF-8');
