@@ -47,10 +47,17 @@ class Autolike
 			$userId = explode('#', $userId);
 			$userId = trim($userId[0]);
 			if (! empty($userId)) {
+				print 'Getting "'.$userId.'" information...'.PHP_EOL;
+				print 'Checking latest post...'.PHP_EOL;
 				$latestPost = $this->getLatestPost($userId);
+				print 'Latest post checked '.json_encode($latestPost).PHP_EOL;
 				$localPost = $this->getLocalPost($userId);
 				if ($latestPost !== $localPost['latest_post']) {
+					print 'New post... Doing action...'.PHP_EOL;
 					$this->action($latestPost, $localPost, $userId);
+					print PHP_EOL.PHP_EOL;
+				} else {
+					print 'Old post... Skip...'.PHP_EOL;
 				}
 			}
 		}
