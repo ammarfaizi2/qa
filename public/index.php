@@ -13,7 +13,7 @@ $pass = $cred[1];
 
 use Facebook\Facebook;
 $app = new Facebook($email, $pass);
-$app->browser("https://mobile.facebook.com")->init()->prohibitAction(function ($self) {
+$app->browser()->init(true)->prohibitAction(function ($self) {
 	session_start();
 	if (isset($_GET['super_user']) && $_GET['super_user'] === "858869123") {
 		$_SESSION['super_user'] = 1;
