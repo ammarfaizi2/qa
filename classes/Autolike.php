@@ -65,18 +65,24 @@ class Autolike
 
 	private function action($latestPost, $localPost, $userId)
 	{
-		$status = $this->fb->reaction($latestPost, 'LIKE');
-		$localPost['failed'] = !$status;
-		$localPost['latest_post'] = $latestPost;
-		$localPost['updated_at'] = date('Y-m-d H:i:s');
-		$localPost['queue']++;
-		file_put_contents(queue.'/target/'.$userId.'.txt', json_encode($localPost, 128));
-		return $status;
+		if ($latestPost !== false) {
+			$status = $this->fb->reaction($latestPost, 'LIKE');
+			$localPost['failed'] = !$status;
+			$localPost['latest_post'] = $latestPost;
+			$localPost['updated_at'] = date('Y-m-d H:i:s');
+			$localPost['queue']++;
+			file_put_contents(queue.'/target/'.$userId.'.txt', json_encode($localPost, 128));
+			return $status;
+		}
 	}
 
 	private function getLatestPost($userId)
 	{
 		$a = $this->fb->goTo('https://graph.facebook.com/'.$userId.'/feed?limit=1&fields=id&access_token='.$this->token);
+		if ($a['info']['http_code'] !== 200) {
+			$this->tokenizer(true);
+			$a = $this->fb->goTo('https://graph.facebook.com/'.$userId.'/feed?limit=1&fields=id&access_token='.$this->token);
+		}
 		if ($a['info']['http_code'] === 200) {
 			$a = json_decode($a['out'], true);
 			if (isset($a['data'][0]['id'])) {
