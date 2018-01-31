@@ -16,7 +16,15 @@ $fb = new Facebook($email, $pass);
 // $fb->reaction('2031457776883873', 'WOW');
 
 $app = new Autolike($fb);
-for ($i=0; $i < 8; $i++) { 
+$h = date('H');
+if ($h > 20 || $h < 5) {
+	$n = 2;
+	$s = 15;
+} else {
+	$n = 8;
+	$s = 1;
+}
+for ($i=0; $i < $n; $i++) { 
 	$app->run();
-//	sleep(2);
+	sleep($s);
 }
