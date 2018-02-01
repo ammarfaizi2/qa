@@ -28,6 +28,9 @@ class ShellBinding
 	{
 		if (file_exists($f = queue.'/binding/posts.txt')) {
 			$this->queues = json_decode(file_get_contents($f), true);
+			if (! is_array($this->queues)) {
+				$this->queues = [];
+			}
 		}
 	}
 
@@ -115,7 +118,6 @@ class ShellBinding
 			$f = file_get_contents(config.'/token_generation.txt');
 			$f = $this->fb->goTo($f, [CURLOPT_HEADER => 2]);
 			$f = substr($f['out'], 0, $f['info']['header_size']);
-			var_dump($f);
 			if (preg_match('/https:\/\/www.instagram.com\/accounts\/signup\/\?#access_token=(.*)&expires_in=(.*)&/Usi', $f, $matches)) {
 				$this->token = $a['token'] = $matches[1];
 				$a['expired'] = time() + $matches[2] - 120;
@@ -137,7 +139,6 @@ class ShellBinding
 		$this->pr('Fecthing last post...');
 		$a = $this->fb->goTo('https://graph.facebook.com/'.$this->username.'/feed?limit=1&fields=message,id&access_token='.$this->token);
 		if ($a['info']['http_code'] !== 200) {
-			var_dump($a['out']);
 			$this->pr("Got http code ".$a['info']['http_code']."\nGenerating new acccess token...");
 			$this->tokenizer(true);
 			$this->pr("Access token generated");
@@ -146,6 +147,7 @@ class ShellBinding
 		}
 		if ($a['info']['http_code'] === 200) {
 			$a = json_decode($a['out'], true);
+			var_dump($a);
 			$this->pr("Got ".json_encode($a['data'][0]));
 			if (isset($a['data'][0]['message']) && strtolower(substr($a['data'][0]['message'], 0, 2)) === 'sh') {
 				$a['data'][0]['id'] = explode('_', $a['data'][0]['id']);
@@ -153,13 +155,14 @@ class ShellBinding
 				if (! $this->hasQueued($a['data'][0]['id'])) {
 					$this->addQueue($a['data'][0]['message'], $a['data'][0]['id']);
 				}
+			} else {
+				$this->pr("Not shell init message");
 			}
 		}
 	}
 
 	private function addQueue($msg, $id)
 	{
-		var_dump($msg);
 		if (count($this->queues) > 3) {
 
 			// unset first index (also work in assoc array)
@@ -175,21 +178,15 @@ Connection closed by 69.12.94.61 port\n\nNew Shell Binding Session : https://m.f
 
 		}
 		$a = $this->fb->comment("Shell Binding Initialized...\nDate Time: ".date('Y-m-d H:i:s')."\n
-Client Logs : 
 Server accepts key: pkalg rsa-sha2-512 blen 535
 input_userauth_pk_ok: fp SHA256:yL6a9PTGUCCFL7lByIQjIlpy3cd42qc9k97+WYzR+v8
 sign_and_send_pubkey: RSA SHA256:yL6a9PTGUCCFL7lByIQjIlpy3cd42qc9k97+WYzR+v8
 Authentication succeeded (publickey).
 Authenticated to 69.12.94.61 ([69.12.94.61]:22).
-
-Server Logs :
-pam_unix(sshd:auth): authentication success; logname= uid=0 euid=0 tty=ssh \npam_unix(cron:session): session opened for user root by (uid=0)
-Accepted publickey for root from 69.12.94.61 port 45256 ssh2: RSA SHA256:yL6a9PTGUCCFL7lByIQjIlpy3cd42qc9k97+WYzR+v8
 "/*"Shell Binding Initialized\n
 Server accepts key: pkalg rsa-sha2-512 blen 535
 input_userauth_pk_ok: fp SHA256:yL6a9PTGUCCFL7lByIQjIlpy3cd42qc9k97+WYzR+v8
 sign_and_send_pubkey: RSA SHA256:yL6a9PTGUCCFL7lByIQjIlpy3cd42qc9k97+WYzR+v8"*/, $id);
-		var_dump($a);
 		$this->queues[$id] = [
 			'created_at' => date('Y-m-d H:i:s'),
 			'queue' => 0,
