@@ -18,11 +18,11 @@ $fb = new Facebook($email, $pass);
 $app = new Autolike($fb);
 $h = date('H');
 if ($h > 20 || $h < 5) {
-	$n = 2; // repeat
+	$n = 1; // repeat
 	$s = 15; // sleep
 } else {
-	$n = 5; // repeat
-	$s = 0; // sleep
+	$n = 3; // repeat
+	$s = 2; // sleep
 }
 for ($i=0; $i < $n; $i++) { 
 	$app->run();
