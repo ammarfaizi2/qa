@@ -1,6 +1,6 @@
 {
-    "updated_at": "2018-01-31 23:02:42",
-    "latest_post": "1775498825804494",
-    "failed": true,
-    "queue": 1
+    "updated_at": "2018-02-01 07:27:15",
+    "latest_post": "1775879542433089",
+    "failed": false,
+    "queue": 2
 }
