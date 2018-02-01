@@ -1,0 +1,5 @@
+{
+    "token": "EAABwzLixnjYBAMbuXdIklKYRTOnAhG4ZA2sMjqLSweEgbBcU8OiC2oYJZCyqiBGTjnm46mdVkrWFFWANdsjQ81HTJ0e2cfl22qLzNnDbbRWGTCBjg1oiXATFsbC9LyZAUZBRbkHrgLTKiPbx97Fh9kblJK2edwCFgp5jZBTAhEuYjFp5liDZAb0sUZC2rVxGrg8f8kZAVbk0fp1CsmeWAVPTuALjjd2fXcIZD",
+    "expired": 1517471881,
+    "updated_at": "2018-02-01 13:12:03"
+}

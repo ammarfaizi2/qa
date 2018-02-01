@@ -29,7 +29,7 @@ class Autolike
 
 	private function tokenizer($force = false)
 	{
-		$a = file_exists(config.'/current_token.txt') ? json_decode(file_get_contents(config.'/current_token.txt'), true) : null;
+		$a = file_exists(token_file) ? json_decode(file_get_contents(token_file), true) : null;
 		if (!$force && is_array($a) && isset($a['token'], $a['expired']) && $a['expired'] > time()) {
 			$this->token = $a['token'];
 		} else {
@@ -40,7 +40,7 @@ class Autolike
 				$this->token = $a['token'] = $matches[1];
 				$a['expired'] = time() + $matches[2] - 120;
 				$a['updated_at'] = date('Y-m-d H:i:s');
-				file_put_contents(config.'/current_token.txt', json_encode($a, 128));
+				file_put_contents(token_file, json_encode($a, 128));
 			} else {
 				die;
 			}
@@ -49,7 +49,7 @@ class Autolike
 
 	private function getJobs()
 	{
-		foreach (explode("\n", file_get_contents(config.'/target.txt')) as $userId) {
+		foreach (explode("\n", file_get_contents(target)) as $userId) {
 			$userId = explode('#', $userId);
 			$userId = trim($userId[0]);
 			if (! empty($userId)) {
