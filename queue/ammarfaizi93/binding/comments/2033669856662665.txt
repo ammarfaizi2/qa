@@ -1,0 +1,58 @@
+{
+    "replied": {
+        "2033702983326019": {
+            "date": "2018-02-01 16:14:17",
+            "status": true,
+            "message": "Shell Binding Initialized",
+            "from": {
+                "name": "Ammar",
+                "id": "100009288837884"
+            }
+        },
+        "2033704993325818": {
+            "date": "2018-02-01 16:16:51",
+            "status": true,
+            "message": "Shell Binding Initialized\n\nServer accepts key: pkalg rsa-sha2-512 blen 535",
+            "from": {
+                "name": "Ammar",
+                "id": "100009288837884"
+            }
+        },
+        "2033705969992387": {
+            "date": "2018-02-01 16:17:55",
+            "status": true,
+            "message": "Shell Binding Initialized\n\nServer accepts key: pkalg rsa-sha2-512 blen 535",
+            "from": {
+                "name": "Ammar",
+                "id": "100009288837884"
+            }
+        },
+        "2033706823325635": {
+            "date": "2018-02-01 16:18:50",
+            "status": true,
+            "message": "Shell Binding Initialized\n\nServer accepts key: pkalg rsa-sha2-512 blen 535\ninput_userauth_pk_ok: fp SHA256:yL6a9PTGUCCFL7lByIQjIlpy3cd42qc9k97+WYzR+v8\nsign_and_send_pubkey: RSA SHA256:yL6a9PTGUCCFL7lByIQjIlpy3cd42qc9k97+WYzR+v8",
+            "from": {
+                "name": "Ammar",
+                "id": "100009288837884"
+            }
+        },
+        "2033707323325585": {
+            "date": "2018-02-01 16:19:22",
+            "status": true,
+            "message": "Shell Binding Initialized\n\nServer accepts key: pkalg rsa-sha2-512 blen 535\ninput_userauth_pk_ok: fp SHA256:yL6a9PTGUCCFL7lByIQjIlpy3cd42qc9k97+WYzR+v8\nsign_and_send_pubkey: RSA SHA256:yL6a9PTGUCCFL7lByIQjIlpy3cd42qc9k97+WYzR+v8",
+            "from": {
+                "name": "Ammar",
+                "id": "100009288837884"
+            }
+        },
+        "2033710159991968": {
+            "date": "2018-02-01 16:22:36",
+            "status": true,
+            "message": "whoami",
+            "from": {
+                "name": "Louvian Lyndal",
+                "id": "100023442999051"
+            }
+        }
+    }
+}

@@ -11,6 +11,58 @@ use Facebook\Support\Comment\Container;
  */
 trait Comment
 {
+	public function comment($text, $postId)
+	{
+		$a = $this->goTo('https://m.facebook.com/'.$postId);
+		// $a['info']['http_code'] = 200;
+		// $a['out'] = file_get_contents('c.txt');
+		if ($a['info']['http_code'] === 200) {
+			// file_put_contents('c.txt', $a['out']);
+			if (preg_match('/<form method="post" action=".*(a\/comment.php\?.*)".*>(.*)<\/form>/Usi', $a['out'], $matches)) {
+				$action = 'https://m.facebook.com/'.html_entity_decode($matches[1], ENT_QUOTES, 'UTF-8');
+				preg_match_all('/<input.*type="hidden".*name="(.*)".*value="(.*)".*>/Usi', $matches[2], $matches);
+				$post = array_combine($matches[1], $matches[2]);
+				$post['comment_text'] = $text;
+				var_dump($a['info']);
+				$q = $this->goTo($action, [
+					CURLOPT_POST => true,
+					CURLOPT_POSTFIELDS => http_build_query($post)
+				])['info']['http_code'] === 200;
+			}
+		}
+		return false;
+	}
+
+	public function replyComment($text, $commentId)
+	{
+		$a = $this->goTo('https://m.facebook.com/'.$commentId);
+		//$a['info']['http_code'] = 200;
+		//$a['out'] = file_get_contents('d.txt');
+		if ($a['info']['http_code'] === 200) {
+			// file_put_contents('d.txt', $a['out']);
+			if (preg_match_all('/<a href=".*(comment\/replies\/.*)"/Usi', $a['out'], $matches)) {
+				$matches = 'https://m.facebook.com/'.html_entity_decode($matches[1][count($matches[1]) - 1], ENT_QUOTES, 'UTF-8');
+				$a = $this->goTo($matches);
+				//$a['info']['http_code'] = 200;
+				//$a['out'] = file_get_contents('e.txt');
+				if ($a['info']['http_code'] === 200) {
+					// file_put_contents('e.txt', $a['out']);
+					if (preg_match('/<form method="post" action=".*(a\/comment.php\?.*)".*>(.*)<\/form>/Usi', $a['out'], $matches)) {
+						$action = 'https://m.facebook.com/'.html_entity_decode($matches[1], ENT_QUOTES, 'UTF-8');
+						preg_match_all('/<input.*type="hidden".*name="(.*)".*value="(.*)".*>/Usi', $matches[2], $matches);
+						$post = array_combine($matches[1], $matches[2]);
+						$post['comment_text'] = $text;
+						return $this->goTo($action, [
+							CURLOPT_POST => true,
+							CURLOPT_POSTFIELDS => http_build_query($post)
+						])['info']['http_code'] === 200;
+					}
+				}
+			}
+		}
+		return false;
+	}
+
 	/**
 	 * @param string|bigint $postId
 	 */

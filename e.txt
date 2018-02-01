@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Balasan</title>
+<meta name="referrer" content="origin-when-crossorigin" id="meta_referrer"/>
+<style type="text/css">
+/*<![CDATA[*/.bt{padding:8px;}.bm>*,.bm.bm>*{border-bottom:1px solid #e5e5e5;}.bm>:last-child{border-bottom:none;}.bm+.bm{border-top:1px solid #e5e5e5;}.f{background:#f6f7f9;}.bo{background:#fff;}.bz{color:#90949c;}.bl{color:#1d2129;}.by{font-size:12px;line-height:16px;}.ca{font-weight:normal;}.bu{font-weight:bold;}.ce{padding:8px 8px 0;}.cf{color:#1d2129;display:block;font-size:small;}.b .ce .ci table{border:none;}.b .ce .co{border:1px solid #999;height:36px;padding:3px 3px 4px 0;width:98%;}.cq{padding-left:4px;}.bs{padding-left:12px;}.cu{margin-top:4px;}form{margin:0;border:0;}.b .y{border:0;border-collapse:collapse;margin:0;padding:0;width:100%;}.b .y tbody,.b .cg>tr>td,.b .cg>tbody>tr>td,.b .y td.cg,.b .bq>tr>td,.b .bq>tbody>tr>td,.b .y td.bq{vertical-align:top;}.b .z>tr>td,.b .z>tbody>tr>td,.b .y td.z{vertical-align:middle;}.b .y td{padding:0;}.b .y td.cn{padding:2px;}.b .y td.bp{padding:4px;}.b .bf{width:100%;}.ck{background:#fff;}.ch .cp{background-color:transparent;color:#4b4f56;display:block;padding:0;width:100%;}.b .ch .cj{border:1px solid #90949c;}.cm{border:0;display:block;margin:0;padding:0;}.b .cn{padding:2px;}.b .bp{padding:4px;}.cr{-moz-appearance:none;background:none;display:inline-block;font-size:12px;height:28px;line-height:28px;margin:0;overflow:visible;padding:0 9px;text-align:center;vertical-align:top;white-space:nowrap;}.b .cr{border-radius:2px;}.ct,a.ct,html .b a.ct{color:#fff;}.b .ct{background-color:#4267b2;border:1px solid #365899;}.b a.ct:hover,.b .ct:hover{background-color:#465e91;}.ct[disabled]{color:#899bc1;}.b .ct[disabled]:hover{background-color:#4267b2;}.cr .u{display:inline-block;}.b .cr .u{display:inline-block;margin-top:0;vertical-align:middle;}.b a.cr::after{content:"";display:inline-block;height:100%;vertical-align:middle;}.cr .u{line-height:20px;margin-top:4px;}.b .cr{padding:0 8px;}.b a.cr{height:26px;line-height:26px;}.u{pointer-events:none;}.br{color:#000;}.cd{color:gray;}.l{font-size:small;}body,tr,input,textarea,.g{font-size:medium;}.b a,.b a:visited{color:#3b5998;text-decoration:none;}.b .bj,.b .bj:visited{color:#fff;}.b a:focus,.b a:hover{background-color:#3b5998;color:#fff;}.b .bj:focus,.b .bj:hover{background-color:#fff;color:#3b5998;}@keyframes highlightFade{0%{background:#fff9d7;}50%{background:#fff9d7;}100%{background:transparent;}}body{text-align:left;direction:ltr;}body,tr,input,textarea,button{font-family:sans-serif;}body,p,figure,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dd,dt{margin:0;padding:0;}h1,h2,h3,h4,h5,h6{font-size:1em;font-weight:bold;}ul,ol{list-style:none;}article,aside,figcaption,figure,footer,header,nav,section{display:block;}.e #viewport{margin:0 auto;max-width:600px;}#page{position:relative;}.m img{padding-left:5px;padding-top:4px;}.m{display:inline-block;padding:3px 0 0 5px;vertical-align:middle;}.b a.o,.b a.o:focus,.b a.o:hover,.b a.o:visited,a.o,a.o:focus,a.o:hover,a.o:visited{background:none;color:#fff;cursor:pointer;padding:0;text-decoration:none;}.q{display:table-cell;padding:4px 5px 4px 5px;text-align:right;vertical-align:middle;}.i{display:table;width:100%;}.n{padding:0 0 0 0;}.j{background-color:#1d2129;color:#fff;padding-top:2px;width:100%;}.k{display:table-cell;padding-bottom:2px;padding-left:6px;padding-top:1px;padding-top:2px;position:relative;vertical-align:middle;width:100%;}.w{background-color:#3b5998;color:#fff;}.w .bh{font-size:small;font-weight:normal;}.bd{display:block;padding:5px;}.x .bg{table-layout:fixed;width:100%;}.bk{background:#6d84b4;display:inline-block;font-size:14px;font-weight:normal;margin:4px 0;padding:2px 8px;}.be,.be.p{display:block;}.bb{display:block;}.bc{height:20px;width:20px;}.p{border:0;display:inline-block;vertical-align:top;}i.p u{position:absolute;width:0;height:0;overflow:hidden;}.bi{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}.t,.b .t{border-radius:2px;display:inline-block;height:25px;line-height:26px;overflow:visible;padding:0 9px;text-align:center;vertical-align:middle;white-space:nowrap;}.s,.b a.s,.b a.s:hover,.b .s,.b .s:hover{background:#b22ec0;color:#fff;font-size:12px;}/*]]>*/
+</style>
+</head>
+<body tabindex="0" class="b c d e f">
+<div class="g">
+	<div id="viewport">
+		<div class="h" id="toggleHeader">
+			<div id="toggleHeaderContent" class="i">
+				<div class="j">
+					<div class="k">
+						<span class="l">Anda dalam Mode Data</span>
+						<div class="m n">
+							<a class="o" href="/zero/toggle/settings/?ref_source=https%3A%2F%2Fmobile.facebook.com%2Fcomment%2Freplies%2F%3Fctoken%3D2033591683337149_2033592650003719%26actor_id%3D100009288837884%26ft_ent_identifier%3D2033591683337149%26gfid%3DAQD6kuk9sdGTDHev%26refid%3D52%26__tn__%3DR&amp;ext=1517728818&amp;hash=AeS036YdPDtgMqOf"><img src="https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/Lrc0F6s2Cff.png?_nc_eui2=v1%3AAeH3l5Vngtzs2Xqo5E7H4bs4z79CjoHd6tV7IgWSw4RV8oGhsKZIvEIZttHKjYCKxfjWLj5Dp7WcttRNFItl_i-5vLWbjj0d743HF1UIuAHAdk-L82KSltxSNqKVlUrf4-o" width="14" height="14" class="p" style="vertical-align: baseline"/></a>
+						</div>
+					</div>
+					<div class="q">
+						<a class="r s t" href="/zero/toggle/switch/?ref_source=%2Fhome.php&amp;location=toggle_banner&amp;ext=1517728818&amp;hash=AeTzBvGdGZiGM0D7"><span class="u">Got to Free Mode</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="v">
+			<div class="w x" role="banner" id="header">
+				<table class="y z" role="presentation">
+				<tbody>
+				<tr>
+					<td class="ba">
+						<a class="bb bc bd" href="/home.php?ref_component=mbasic_home_logo&amp;ref_page=MCommentRepliesController"><img src="https://static.xx.fbcdn.net/rsrc.php/v3/ym/r/Gjhrhb7r0lb.png?_nc_eui2=v1%3AAeGch6OC_wJT_hhleiinNe76IZgZouw-GjnqsdsHk9gora8oRutVrj7sGXZVBFHNgpnKk4620_uHPUl4j8mTHTdnv2U1nsqhvaIkWkWMePJx_obQqCQgGOJd749Ic0nFUfk" width="20" height="20" class="be p" alt="Facebook logo"/></a>
+					</td>
+					<td class="bf">
+						<table class="y z bg" role="presentation">
+						<tbody>
+						<tr>
+							<td class="bf">
+								<h1 class="bh bi"><a class="bj bk" href="/home.php">Buka Beranda</a></h1>
+							</td>
+						</tr>
+						</tbody>
+						</table>
+					</td>
+				</tr>
+				</tbody>
+				</table>
+			</div>
+		</div>
+		<div id="objects_container">
+			<div class="f" id="root" role="main">
+				<div class="bl f bm bn">
+					<div class="bo bp">
+						<a href="/story.php?story_fbid=2033591683337149&amp;id=100000590125569#comment_form_100000590125569_2033591683337149">
+						<table class="y bq" role="presentation">
+						<tbody>
+						<tr>
+							<td class="bf">
+								<span class="br">Balasan untuk komentar Ammar di <strong><span class="unlinkedTextEntity">kiriman</span></strong><strong><span class="unlinkedTextEntity">Ammar Faizi</span></strong>.</span>
+							</td>
+							<td class="ba bs">
+								Lihat kiriman
+							</td>
+						</tr>
+						</tbody>
+						</table>
+						</a>
+					</div>
+					<div class="bo bp bt" id="2033592650003719">
+						<div>
+							<h3><a class="bu bv" href="/ammarfaizi2?__tn__=R">Ammar Faizi</a></h3>
+							<div class="bw">
+								2
+							</div>
+							<div class="bx">
+							</div>
+							<div class="by bz ca">
+								<span class="cb" id="like_2033591683337149_2033592650003719"><span class="cc cd"><a href="/a/comment.php?parent_redirect_comment_token=2033591683337149_2033592650003719&amp;like_comment_id=2033592650003719&amp;snowflake&amp;ft_ent_identifier=2033591683337149&amp;av=100009288837884&amp;gfid=AQCpqfI6JM9OdjtB&amp;__tn__=R">Suka</a><span aria-hidden="true"> · </span><a href="/reactions/picker/?ft_id=2033591683337149_2033592650003719&amp;origin_uri=https%3A%2F%2Fmobile.facebook.com%2Fcomment%2Freplies%2F%3Fctoken%3D2033591683337149_2033592650003719%26actor_id%3D100009288837884%26ft_ent_identifier%3D2033591683337149%26gfid%3DAQD6kuk9sdGTDHev%26refid%3D52%26__tn__%3DR&amp;av=100009288837884&amp;__tn__=R">Tanggapi</a></span></span><span aria-hidden="true"> · </span><a href="/nfx/basic/question/?context_str=%7B%22breadcrumbs%22%3A%5B%5D%2C%22story_location%22%3A%22unknown%22%2C%22is_from_feed_tombstone%22%3Afalse%2C%22actions_taken%22%3A%22%22%2C%22is_rapid_reporting%22%3Afalse%2C%22is_instream_follow_up%22%3Afalse%2C%22entry_point%22%3A%22unknown%22%2C%22reportable_ent_token%22%3A%22RW50R2VuZXJpY0NvbW1lbnQ6MjAzMzU5MTY4MzMzNzE0OV8yMDMzNTkyNjUwMDAzNzE5%22%2C%22is_impostor%22%3A%22%22%7D&amp;redirect_uri=https%3A%2F%2Fmobile.facebook.com%2Fcomment%2Freplies%2F%3Fctoken%3D2033591683337149_2033592650003719%26actor_id%3D100009288837884%26ft_ent_identifier%3D2033591683337149%26gfid%3DAQD6kuk9sdGTDHev%26refid%3D52%26__tn__%3DR&amp;__tn__=R">Laporkan</a><span aria-hidden="true"> · </span><abbr>40 menit yang lalu</abbr>
+							</div>
+						</div>
+					</div>
+					<div class="ce">
+						<form method="post" action="/a/comment.php?parent_comment_id=2033592650003719&amp;parent_redirect_comment_token=2033591683337149_2033592650003719&amp;fs=0&amp;comment_logging&amp;ft_ent_identifier=2033591683337149&amp;gfid=AQBBfU4QOVjJq42x&amp;av=100009288837884">
+							<input type="hidden" name="fb_dtsg" value="AQFXMX0IQbl_:AQFIL5BOhKB-" autocomplete="off"/><label class="cf" for="u_0_0">Tulis balasan...</label>
+							<table class="y cg" role="presentation" id="u_0_0">
+							<tbody>
+							<tr>
+								<td class="bf">
+									<div class="ch ci">
+										<table class="y cj ck" role="presentation">
+										<tbody>
+										<tr>
+											<td class="bf cl z">
+												<input class="cm cn co cp" id="composerInput" name="comment_text" autocomplete="off" type="text"/>
+											</td>
+										</tr>
+										</tbody>
+										</table>
+									</div>
+								</td>
+								<td class="ba">
+									<div class="cq">
+										<input value="Balas" type="submit" class="r ca cr cs ct"/>
+									</div>
+								</td>
+							</tr>
+							</tbody>
+							</table>
+							<span class="cu l cd"><a href="/mbasic/comment/advanced/?target_id=2033591683337149&amp;parent_comment_token=2033591683337149_2033592650003719&amp;pap=1&amp;at=reply&amp;photo_comment=1">Lampirkan Foto</a><span aria-hidden="true"> · </span><a href="/friends/selector/?return_uri=%2Fmbasic%2Fcomment%2Fadvanced%2F%3Ftarget_id%3D2033591683337149%26parent_comment_token%3D2033591683337149_2033592650003719%26pap%26at%3Dreply%26photo_comment&amp;cancel_uri=%2Fmbasic%2Fcomment%2Fadvanced%2F%3Ftarget_id%3D2033591683337149%26parent_comment_token%3D2033591683337149_2033592650003719%26pap%26at%3Dreply%26photo_comment&amp;friends_key=ids">Sebut Teman</a></span>
+						</form>
+					</div>
+				</div>
+				<div>
+					<div>
+						<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="1" width="1" src="/sem_pixel/1/control/0/">
+						</iframe>
+						<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" height="1" width="1" src="/sem_pixel/1/control/1/">
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
