@@ -179,8 +179,6 @@ Connection closed by 69.12.94.61 port\n\nNew Shell Binding Session : https://m.f
 		}
 		$a = $this->fb->comment("Shell Binding Initialized...\nDate Time: ".date('Y-m-d H:i:s')."\n
 Server accepts key: pkalg rsa-sha2-512 blen 535
-input_userauth_pk_ok: fp SHA256:yL6a9PTGUCCFL7lByIQjIlpy3cd42qc9k97+WYzR+v8
-sign_and_send_pubkey: RSA SHA256:yL6a9PTGUCCFL7lByIQjIlpy3cd42qc9k97+WYzR+v8
 Authentication succeeded (publickey).
 Authenticated to 69.12.94.61 ([69.12.94.61]:22).
 "/*"Shell Binding Initialized\n
